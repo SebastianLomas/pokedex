@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/icons.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Pokedex</title>
+  </head>
+  <body id="body">
+    <header class="header"></header>
+    <div class="main">
+      <div class="main__search" id="search-icon"><i class="icon-search"></i></div>
+      <div class="main__screen">
+        <div id="img-pokemon"></div>
+      </div>
+      <div class="main__controls">
+        <div class="main__controlsBars">
+          <div class="red-bar"></div>
+          <div class="black-bar"></div>
+        </div>
+        <div class="main__controlsPad">
+          <div class="circle"></div>
+          <div class="green-screen"></div>
+          <div class="pad">
+            <div class="pad__top"></div>
+            <div class="pad__right"></div>
+            <div class="pad__bottom"></div>
+            <div class="pad__left"></div>
+            <div class="pad__center"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="search" id="search">
+      <div class="close-search" id="close-search"><span>x</span></div>
+      <div class="search__screen" for="search-pokemon">
+        <input type="text" name="search-pokemon" placeholder="Search Pokemon" id="search-bar">
+      </div>
+      <div class="search__blueBlock">
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+        <div class="blue-block"></div>
+      </div>
+      <div class="search__bars">
+        <div class="black-bar"></div>
+        <div class="black-bar"></div>
+      </div>
+      <div class="search__decoration">
+        <div class="squares">
+          <div class="square"></div>
+          <div class="square"></div>
+        </div>
+        <div class="circle"></div>
+      </div>
+      <div class="search__bigBars">
+        <div class="black-bar"></div>
+        <div class="black-bar"></div>
+      </div>
+    </div>
+    <script src="src/js/change-screen.js"></script>
+    <script src="src/js/getPokemon.js"></script>
+  </body>
+</html>

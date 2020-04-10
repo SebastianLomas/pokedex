@@ -1,0 +1,396 @@
+.red-bar {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #DC0A2D;
+  border: 1px solid #031d19;
+}
+
+.black-bar {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #05342E;
+  border: 1px solid #031d19;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (min-width: 568px) {
+  body {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: capitalize;
+    background-color: #DEDEDE;
+  }
+}
+@media screen and (max-width: 567px) {
+  body {
+    font-family: "Roboto", sans-serif;
+    font-size: 10px;
+    box-sizing: border-box;
+    padding-top: 0.5em;
+    position: relative;
+    color: #05342E;
+    background-color: #DC0A2D;
+  }
+}
+@media screen and (max-width: 414px) {
+  .header {
+    display: none;
+    width: 100%;
+    height: 5em;
+    background-image: url("https://i.imgur.com/ewrmSOc.png");
+    background-size: 100% 100%;
+    background-position: center 0%;
+  }
+}
+@media screen and (min-height: 560px) {
+  .header {
+    display: block;
+    height: 10em;
+  }
+}
+@media screen and (min-width: 415px) {
+  .main {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .main {
+    width: 90%;
+    height: 85vh;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 3em;
+    position: relative;
+    z-index: 1;
+    background-image: url("https://i.imgur.com/SjlQuHw.png");
+    background-size: 100% 100%;
+  }
+  .main__search {
+    display: flex;
+    width: 77%;
+    justify-content: flex-end;
+    margin: 0 auto;
+    font-size: 3em;
+    color: #DEDEDE;
+  }
+  .main__search i {
+    transform: scaleX(-1);
+  }
+  .main__screen {
+    display: flex;
+    width: 23em;
+    height: 23em;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-image: url("https://i.imgur.com/nIplxcN.png");
+    background-size: 100% 100%;
+  }
+  .main__screen div {
+    width: 75%;
+    height: 75%;
+    border: 1px solid #05342E;
+    border-radius: 1.2em;
+    background-color: #2CABFB;
+  }
+  .main__screen div img {
+    width: 100%;
+    height: 100%;
+  }
+  .main__controls {
+    width: 90%;
+    height: 40%;
+    margin: 1em auto;
+  }
+  .main__controlsBars {
+    display: flex;
+    width: 50%;
+    height: 1em;
+    justify-content: space-evenly;
+    margin: 1em 0 1em 2em;
+  }
+  .main__controlsPad {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+  .main__controlsPad .circle {
+    width: 5em;
+    height: 5em;
+    border: 1px solid #031d19;
+    border-radius: 100%;
+    background-color: #DEB221;
+  }
+  .main__controlsPad .green-screen {
+    margin-top: 10%;
+    width: 10em;
+    height: 5em;
+    border: 1px solid #05342E;
+    border-radius: 0.5em;
+    background-color: #4BA05A;
+  }
+  .main__controlsPad .pad {
+    width: 36%;
+    height: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .main__controlsPad .pad .pad__top {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: #06423a;
+    box-sizing: border-box;
+    border-top: 2px solid #05342E;
+    border-right: 2px solid #05342E;
+    border-bottom: 2px solid none;
+    border-left: 2px solid #05342E;
+  }
+  .main__controlsPad .pad .pad__right {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #06423a;
+    box-sizing: border-box;
+    border-top: 2px solid #05342E;
+    border-right: 2px solid #05342E;
+    border-bottom: 2px solid #05342E;
+    border-left: 2px solid none;
+  }
+  .main__controlsPad .pad .pad__bottom {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: #06423a;
+    box-sizing: border-box;
+    border-top: 2px solid none;
+    border-right: 2px solid #05342E;
+    border-bottom: 2px solid #05342E;
+    border-left: 2px solid #05342E;
+  }
+  .main__controlsPad .pad .pad__left {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #06423a;
+    box-sizing: border-box;
+    border-top: 2px solid #05342E;
+    border-right: 2px solid none;
+    border-bottom: 2px solid #05342E;
+    border-left: 2px solid #05342E;
+  }
+  .main__controlsPad .pad .pad__center {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: #06423a;
+    box-sizing: border-box;
+    border-top: 2px solid none;
+    border-right: 2px solid none;
+    border-bottom: 2px solid none;
+    border-left: 2px solid none;
+  }
+}
+@media screen and (min-height: 560px) {
+  .main {
+    height: 80vh;
+  }
+  .main__search {
+    width: 67%;
+  }
+  .main__controlsPad .pad {
+    width: 45%;
+  }
+}
+.appear-animation {
+  animation-name: appear-animation;
+  animation-duration: 500ms;
+  animation-direction: normal;
+}
+
+.close-animation {
+  animation-name: close-animation;
+  animation-duration: 500ms;
+  animation-direction: normal;
+}
+
+@keyframes appear-animation {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+@keyframes close-animation {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+@media screen and (min-width: 415px) {
+  .search {
+    display: none;
+  }
+}
+@media screen and (max-width: 414px) {
+  .search {
+    display: none;
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding-top: 2em;
+    margin-top: 1em;
+    background-color: #DC0A2D;
+    background-image: url("https://i.imgur.com/Vb44Bgo.png");
+    background-position: 100% 0%;
+    background-size: 100% 100%;
+  }
+  .search .close-search {
+    display: flex;
+    width: 5em;
+    height: 5em;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 1%;
+    right: 1%;
+    border: 1px solid #DEDEDE;
+    border-radius: 100%;
+    background-color: #05342E;
+  }
+  .search .close-search span {
+    font-size: 4em;
+    font-weight: bold;
+    color: #DEDEDE;
+  }
+  .search__screen {
+    width: 90%;
+    height: 8em;
+    margin: 0 auto;
+    background-color: #4BA05A;
+  }
+  .search__screen input {
+    display: block;
+    width: 90%;
+    height: 90%;
+    border: 0;
+    margin: auto auto;
+    font-size: 2.2em;
+    box-sizing: border-box;
+    padding: 0.1em 0.5em;
+    background-color: #4BA05A;
+  }
+  .search__screen input:focus {
+    border: 0;
+  }
+  .search__blueBlock {
+    display: grid;
+    width: 90%;
+    height: 15em;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(2, 50%);
+    margin: 1em auto;
+  }
+  .search__blueBlock .blue-block {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #05342E;
+    background-color: #2CABFB;
+  }
+  .search__bars {
+    display: flex;
+    width: 95%;
+    height: 2em;
+    justify-content: flex-end;
+  }
+  .search__bars .black-bar {
+    width: 5.3em;
+    height: 1em;
+  }
+  .search__decoration {
+    display: flex;
+    width: 90%;
+    height: auto;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+  .search__decoration .squares {
+    display: grid;
+    width: 10em;
+    height: 5em;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: 100%;
+  }
+  .search__decoration .squares .square {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #05342E;
+    background-color: #DEDEDE;
+  }
+  .search__decoration .circle {
+    width: 5em;
+    height: 5em;
+    border: 1px solid #031d19;
+    border-radius: 100%;
+    background-color: #DEB221;
+  }
+  .search__bigBars {
+    display: flex;
+    width: 90%;
+    height: 3em;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1em auto;
+  }
+  .search__bigBars .black-bar {
+    width: 47%;
+  }
+}
+@media screen and (min-height: 560px) {
+  .search {
+    height: 92vh;
+    padding-top: 40%;
+  }
+  .search__decoration {
+    margin: 15% auto;
+  }
+}

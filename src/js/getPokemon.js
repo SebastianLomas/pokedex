@@ -4,6 +4,10 @@ const ENTER = 13
 
 insertPokemon(1)
 
+searchBar.addEventListener('click',()=>{
+    searchBar.value = ''
+})
+
 /* Whem the users press ENTER, this event calls insertPokemon() and the paramete
     comes from the input bar
 */
